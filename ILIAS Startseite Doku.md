@@ -21,6 +21,18 @@ Neben der allgemeinen Startseite kann eine persönliche Startseite für Benutzer
 
 Unter `Administration`→`Authentifizierung / Neuanmeldung`→`Authentifizierung`→`Loginseite gestalten` können Rich-Text-Inhalte zur Login-Seite hinzugefügt werden.
 
+Dieser Text sollte sich über `Administration`→`Layout`→`Content Style`→`Name des aktiven Content Styles` stilistisch verändern lassen. Damit und mit CSS/Less könnte ggf. schon die gewünschte Anpassung erzielt werden, ohne die HTML-Templates bearbeiten zu müssen.
+
+Folgende HTML-Vorlagen sind relevant:
+1) `Services/Init/tpl.login.html`
+   Enthält die Details und ist spezifisch für das Login-Formular.
+2) `Services/Init/tpl.startup_screen.html`
+   Ist der äußere Rahmen, welcher unter anderem fürs Login-Formular, aber beispielsweise auch für die Nutzungsvereinbarung verwendet wird.
+
+Wichtig: Die HTML-Kommentare (`<!-- -->`) müssen in der Datei stehen bleiben und weiterhin die gleichen Elemente einschließen. Bestimmte Elemente werden von der ILIAS PHP-Anwendung durch die Kommentare gesucht, vervielfältigt, geändert oder entfernt. Daher sind die HTML-Kommentare unerlässlich. Sind sie fehlerhaft, könnte ILIAS vollständig den Dienst verweigern.
+
+Weitere Änderungen an Login-Seiten deren Vorlagen noch nicht im Skin-Verzeichnis liegen, lassen sich aus dem [ILIAS GitHub repository](https://github.com/ILIAS-eLearning/ILIAS/tree/release_5-3/Services/Init/templates/default) kopieren und unter `Services/Init/` im Skin-Verzeichnis mit gleichem Namen einfügen.
+
 ## Gestaltung des Magazins
 
 Unter `Magazin`→`Magazin - Einstiegsseite` können im Reiter `Inhalt`→`Seite gestalten` Rich-Text-Inhalte hinzugefügt werden. Die Präsentation des Magazins kann im Reiter `Inhalt` und `Einstellungen` vorgenommen werden.
