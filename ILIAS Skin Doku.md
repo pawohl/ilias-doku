@@ -127,13 +127,13 @@ Um die Variablennutzung begutachten zu können, ist es hilfreich, die verwendete
 So finden Sie **alle `less`-Dateien** in der aktuellen ILIAS-Version:
 
 * Im ILIAS-Quellcode-Verzeichnis: `find . -path ./data -prune -o -name "*.less"`
-* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/blob/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `extension:less`
+* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/tree/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `extension:less`
 * Die meistrelevanten Dateien dürften in der [`templates/default/delos.less`](https://github.com/ILIAS-eLearning/ILIAS/blob/release_5-3/templates/default/delos.less) verlinkt sein. Bitte den richtigen Entwicklungszweig (Branch) wählen.
 
 So **durchsuchen** Sie nur **Less-Dateien**:
 
 * Im ILIAS-Quellcode-Verzeichnis: `grep -r --include \*.less "Suchmuster"`
-* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/blob/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `Suchmuster extension:less`
+* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/tree/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `Suchmuster extension:less`
 
 ##### Änderungen an HMTL-Vorlagen
 Nicht alle Änderungen lassen sich allen mit Less oder CSS ausführen. Soll beispielsweise ein weiterer Bereich mit Logo zum Footer hinzugefügt werden, ist das nur schwer mit Stylesheets umzusetzen.
@@ -145,7 +145,7 @@ Der Ablageort, an welchem die Vorlage im ILIAS-Quellcode-Verzeichnis gespeichert
 Um Vorlagen anzupassen, muss man diese finden. So **durchsuchen** Sie nur **HTML-Dateien**:
 
 * Im ILIAS-Quellcode-Verzeichnis: `grep -r --include \*.html "Suchmuster"`
-* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/blob/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `Suchmuster extension:html`
+* [Auf GitHub](https://github.com/ILIAS-eLearning/ILIAS/tree/release_5-3): Wählen Sie den korrekten Entwicklungszweig (Branch) und suchen Sie: `Suchmuster extension:html`
 
 **Beispiel**: Sie möchten, dass der Link zum Impressum im Footer vor der Kopiervorlage für den Link zur aktuellen Seite angezeigt wird. Um die Vorlage zu finden, haben Sie den HTML-Quelltext der Ausgabe inspiziert (Developer Tools Ihres Browsers). Sie haben gesehen, dass es ein Element mit der CSS-Klasse `ilFooterContainer` gibt. Sie suchen danach und sehen, dass es 3 Dateien gibt, die diese Klassen enthalten:
 
